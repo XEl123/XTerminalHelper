@@ -7,6 +7,7 @@
 using namespace std;
 
 int main(){
+	system("color 0A");
 	int ind = 1;
 	int clv;
 	string cmd;
@@ -217,8 +218,13 @@ int main(){
 		system("cls");
 		cout<<"Please enable Caps lock"<<endl;
 			cout<<"Enter the command:";
+			if (ind == 1 ){
+				getline(cin,cmd);	
+			}
+			else{
 				getline(cin,cmd);
 				getline(cin,cmd);
+			}
 					cout<<"Enter the key text to the command:";
 						getline(cin,cmd2);
 					ifstream file2("command.txt");
@@ -243,7 +249,6 @@ int main(){
 							gg = "";
 							cmd = "";
 							cmd2 = "";
-							ind++;
 	}
 	else{
 		system("cls");
@@ -251,5 +256,6 @@ int main(){
 		getch();
 	}
 		system("cls");
+			ind++;
 }
 }
