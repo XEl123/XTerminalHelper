@@ -218,6 +218,7 @@ int main(){
 		cout<<"Please enable Caps lock"<<endl;
 			cout<<"Enter the command:";
 				getline(cin,cmd);
+				getline(cin,cmd);
 					cout<<"Enter the key text to the command:";
 						getline(cin,cmd2);
 					ifstream file2("command.txt");
