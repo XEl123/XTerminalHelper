@@ -17,14 +17,14 @@ int main(){
 	string kh;
 	string mass[100000];
 	string mass2[100000];
-	int i = 0,s = 1,t = 0;
+	int i = 0,s = 2,t = 0;
 	char a;
 	int b = 0;
 	string hh;
 	char ar[100000];
 	int u = 0;
 	while ( 1 != 0 ){
-	cout<<"Select the operating mode(1-2):"<<endl;
+	cout<<"Select the operating mode(1-3):"<<endl;
 	cout<<"                  1.Choose a command"<<endl;
 	cout<<"                  2.Add a command"<<endl;
 	cout<<"                  3.Help"<<endl;
@@ -44,12 +44,13 @@ int main(){
 				i++;
 			}
 				file6.close();
-			cout<<"Choose the command(1-"<<i-1<<"):"<<endl;
+			cout<<"Choose the command(1-"<<i-2<<"):"<<endl;
 			while (s != i ){
-				cout<<s<<"."<<mass2[s]<<"("<<mass[s]<<")"<<endl;
+				cout<<s-1<<"."<<mass2[s]<<"("<<mass[s]<<")"<<endl;
 				s++;
 			}
 			cin>>b;
+			b++;
 			ofstream file8("writer.txt");
 			file8<<mass[b] + '\0';
 			file8.close();
@@ -212,7 +213,7 @@ int main(){
 			}
 			i = 0;
 			u = 0;
-			s = 1;
+			s = 2;
 			t = 0;
 					ind++;
 	}
