@@ -27,6 +27,7 @@ int main(){
 	cout<<"Select the operating mode(1-2):"<<endl;
 	cout<<"                  1.Choose a command"<<endl;
 	cout<<"                  2.Add a command"<<endl;
+	cout<<"                  3.Help"<<endl;
 	a = getch();
 	if ( a == '1' ){
 		system("cls");
@@ -213,6 +214,7 @@ int main(){
 			u = 0;
 			s = 1;
 			t = 0;
+					ind++;
 	}
 	else if ( a == '2' ){
 		system("cls");
@@ -250,12 +252,19 @@ int main(){
 							cmd = "";
 							cmd2 = "";
 	}
+	else if ( a == '3' ){
+		system("cls");
+		cout<<"                               HOW TO USE"<<endl;
+		cout<<"If you want to add a command - press 2 in the main menu."<<endl;
+		cout<<"If you want to select a command for automatic transmission - press 1 in the main menu."<<endl;
+		cout<<"After pressing 1 enter the command number, press Enter and within 5 seconds switch to the terminal window."<<endl;
+		getch();
+	}
 	else{
 		system("cls");
 		cout<<"Error:Item not found";
 		getch();
 	}
 		system("cls");
-			ind++;
 }
 }
